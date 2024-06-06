@@ -31,7 +31,7 @@ jobs:
                 name: Build and push
                 uses: docker/build-push-action@v4
                 with:
-                  context: .
-                  file: ./IT-landscape/getting-started-app/Dockerfile
+                  context: ./getting-started-app
+                  file: ./getting-started-app/Dockerfile
                   push: true
                   tags: egonrenard/clockbox:latest
